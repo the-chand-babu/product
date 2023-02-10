@@ -1,0 +1,86 @@
+1.category
+
+documentation of api
+
+1 . add mongoDb url in db.js file. inside
+ex- mongoose.connect("enter mongodb url")
+
+2. base url localhost
+ for category
+for getting data
+
+ 1. localhost:7100/category - this will give you all the data what store in database
+
+ 2. localhost:7100/category/{enter categoryName} it will give you particular category present or not.
+
+for updating 
+
+ 3.localhost:7100/category/update/{enter category  name here} and and give payload in body particular
+
+ ex - { categoryName:"name"}; enter in json in the body particular
+
+ for deleting 
+
+ 4. localhost:7100/category/delete/{categoryID} it will delete category if present in the database
+
+ 
+ for creating new category
+
+ localhost:7100/category/create
+
+ enter data in json format in body
+ exp-
+ name field must be same in body categoryName, categoryID
+
+ {
+    categoryId:"123",
+    categoryName:"soap"
+ }
+
+
+
+ 2. Product api
+
+creating product data...
+
+ 1.localhost:7100/Product/create
+ name field must be same enter data in body in json format
+
+ ex -{
+        productId:enter id name in string
+    productName:enter product name in string,
+    qtyPerUnit:enter quantity in string,
+    unitPrice:enter unit in string,
+    unitStock:enter stock in string,
+    discontinued:enter true or false in boolean,
+    categoryName: enter category name in string
+ }
+
+  updating a product data...
+ 1.localhost:7100/Product/update/enter productId
+
+  ex -{
+        productId:enter id name in string
+    productName:enter product name in string,
+    qtyPerUnit:enter quantity in string,
+    unitPrice:enter unit in string,
+    unitStock:enter stock in string,
+    discontinued:enter true or false in boolean,
+    categoryName: enter category name in string
+ }
+
+for deleting data
+ 
+ 1.localhost:7100/delete/enter productId
+
+ for getting data
+
+ 1. for particular id 
+
+ 1.localhost:7100/Product/enter productId
+ 
+ 2.localhost:7100/product
+ 
+
+  
+
